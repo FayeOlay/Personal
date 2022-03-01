@@ -1,0 +1,1277 @@
+<!doctype html>
+<html>
+<head>
+  <title>Menu</title>
+  <link rel ="shortcut icon" href="f2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="menu.js"></script>
+<style>
+
+body {
+  background-color: white;
+}
+
+.rectangle#drag {
+position: absolute;
+width: 180vw;
+height: 180vh;
+background-color: #ff3333;
+top: 10vh;
+right: 10vw;
+z-index: 10;
+cursor: pointer;
+}
+
+/* TITLE */
+
+#sculpture {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 40px;
+top: 60vh;
+right: 60vw;
+z-index: 20;
+}
+
+#sculpture:hover {
+  color: white;
+}
+
+#painting {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 20vh;
+right: 10vw;
+z-index: 20;
+}
+
+#painting:hover {
+  color: white;
+}
+
+#gd {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 30px;
+top: 80vh;
+right: 120vw;
+z-index: 20;
+}
+
+#gd:hover {
+  color: white;
+}
+
+#photography {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 40px;
+top: 140vh;
+right: 30vw;
+z-index: 20;
+}
+
+#photography:hover {
+  color: white;
+}
+
+#contact {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 40px;
+top: 140vh;
+right: 140vw;
+z-index: 20;
+}
+
+#contact:hover {
+  color: white;
+}
+
+#resume {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 40px;
+top: 10vh;
+right: 170vw;
+z-index: 20;
+}
+
+#resume:hover {
+  color: white;
+}
+
+#faye {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 40px;
+top: 30vh;
+right: 130vw;
+z-index: 20;
+}
+
+#faye:hover {
+  color: white;
+}
+
+/* F's */
+
+#f {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 40vh;
+right: 30vw;
+z-index: 20;
+}
+
+#f2 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 45vh;
+right: 32vw;
+z-index: 20;
+}
+
+#f3 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 48vh;
+right: 39vw;
+z-index: 20;
+}
+
+#f4 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 39vh;
+right: 45vw;
+z-index: 20;
+}
+
+#f5 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 30vh;
+right: 54vw;
+z-index: 20;
+}
+
+#f6 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 29vh;
+right: 30vw;
+z-index: 20;
+}
+
+#f7 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 31vh;
+right: 53vw;
+z-index: 20;
+}
+
+#f8 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 60vh;
+right: 53vw;
+z-index: 20;
+}
+
+#f9 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 55vh;
+right: 40vw;
+z-index: 20;
+}
+
+#f10 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 19vh;
+right: 25vw;
+z-index: 20;
+}
+
+#f11 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 23vh;
+right: 6vw;
+z-index: 20;
+}
+
+#f12 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 16vh;
+right: 10vw;
+z-index: 20;
+}
+
+#f13 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 25vh;
+right: 30vw;
+z-index: 20;
+}
+
+#f14 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 40vh;
+right: 38vw;
+z-index: 20;
+}
+
+#f15 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 16vh;
+right: 10vw;
+z-index: 20;
+}
+
+#f16 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 50vh;
+right: 30vw;
+z-index: 20;
+}
+
+#f17 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 50vh;
+right: 80vw;
+z-index: 20;
+}
+
+#f18 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 60vh;
+right: 75vw;
+z-index: 20;
+}
+
+#f19 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 90vh;
+right: 80vw;
+z-index: 20;
+}
+
+#f20 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 60vh;
+right: 10vw;
+z-index: 20;
+}
+
+#f21 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 10vh;
+right: 50vw;
+z-index: 20;
+}
+
+#f22 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 20vh;
+right: 40vw;
+z-index: 20;
+}
+
+#f23 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 15vh;
+right: 15vw;
+z-index: 20;
+}
+
+#f24 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 5vh;
+right: 5vw;
+z-index: 20;
+}
+
+#f25 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 3vh;
+right: 35vw;
+z-index: 20;
+}
+
+#f26 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 6vh;
+right: 20vw;
+z-index: 20;
+}
+
+#f27 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 45vh;
+right: 15vw;
+z-index: 20;
+}
+
+#f28 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 55vh;
+right: 18vw;
+z-index: 20;
+}
+
+#f29 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 48vh;
+right: 25vw;
+z-index: 20;
+}
+
+#f30 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 30vh;
+right: 30vw;
+z-index: 20;
+}
+
+#f31 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 25vh;
+right: 25vw;
+z-index: 20;
+}
+
+#f32 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 10vh;
+right: 33vw;
+z-index: 20;
+}
+
+#f33 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 17vh;
+right: 44vw;
+z-index: 20;
+}
+
+#f34 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 120vh;
+right: 30vw;
+z-index: 20;
+}
+
+#f35 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 120vh;
+right: 30vw;
+z-index: 20;
+}
+#f36 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 125vh;
+right: 40vw;
+z-index: 20;
+}
+#f37 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 140vh;
+right: 130vw;
+z-index: 20;
+}
+#f38 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 100vh;
+right: 10vw;
+z-index: 20;
+}
+#f39 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 85vh;
+right: 10vw;
+z-index: 20;
+}
+#f40 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 30vh;
+right: 140vw;
+z-index: 20;
+}
+#f41 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 155vh;
+right: 20vw;
+z-index: 20;
+}
+#f42 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 166vh;
+right: 136vw;
+z-index: 20;
+}
+#f43 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 78vh;
+right: 110vw;
+z-index: 20;
+}
+#f44 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 177vh;
+right: 90vw;
+z-index: 20;
+}
+#f45 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 127vh;
+right: 22vw;
+z-index: 20;
+}
+#f46 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 72vh;
+right: 114vw;
+z-index: 20;
+}
+#f47 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 49vh;
+right: 124vw;
+z-index: 20;
+}
+#f48 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 85vh;
+right: 29vw;
+z-index: 20;
+}
+#f49 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 153vh;
+right: 36vw;
+z-index: 20;
+}
+#f50 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 94vh;
+right: 23vw;
+z-index: 20;
+}
+#f51 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 74vh;
+right: 138vw;
+z-index: 20;
+}
+
+#f52 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 99vh;
+right: 130vw;
+z-index: 20;
+}
+#f53 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 10vh;
+right: 10vw;
+z-index: 20;
+}
+#f54 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 5vh;
+right: 15vw;
+z-index: 20;
+}
+#f55 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 33vh;
+right: 20vw;
+z-index: 20;
+}
+#f56 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 10vh;
+right: 140vw;
+z-index: 20;
+}
+#f57 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 15vh;
+right: 168vw;
+z-index: 20;
+}
+#f58 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 18vh;
+right: 118vw;
+z-index: 20;
+}
+#f59 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 15vh;
+right: 93vw;
+z-index: 20;
+}
+#f60 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 8vh;
+right: 76vw;
+z-index: 20;
+}
+#f61 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 5vh;
+right: 138vw;
+z-index: 20;
+}
+#f62 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 20vh;
+right: 108vw;
+z-index: 20;
+}
+#f63 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 5vh;
+right: 112vw;
+z-index: 20;
+}
+#f64 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 128vh;
+z-index: 20;
+}
+#f65 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 48vh;
+right: 62vw;
+z-index: 20;
+}
+#f66 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 55vh;
+right: 69vw;
+z-index: 20;
+}
+#f67 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 39vh;
+right: 65vw;
+z-index: 20;
+}
+#f68 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 42vh;
+right: 89vw;
+z-index: 20;
+}
+#f69 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 167vh;
+right: 66vw;
+z-index: 20;
+}
+#f70 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 178vh;
+right: 170vw;
+z-index: 20;
+}
+#f71 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 159vh;
+right: 152vw;
+z-index: 20;
+}
+#f72 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 135vh;
+right: 116vw;
+z-index: 20;
+}
+#f73 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 142vh;
+right: 88vw;
+z-index: 20;
+}
+#f74 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 139vh;
+right: 80vw;
+z-index: 20;
+}
+#f75 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 135vh;
+right: 89vw;
+z-index: 20;
+}
+#f76 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 109vh;
+right: 78vw;
+z-index: 20;
+}
+#f77 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 172vh;
+right: 170vw;
+z-index: 20;
+}
+#f78 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 169vh;
+right: 170vw;
+z-index: 20;
+}
+#f79 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 168vh;
+right: 175vw;
+z-index: 20;
+}
+#f80 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 165vh;
+right: 165vw;
+z-index: 20;
+}
+#f81 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 158vh;
+right: 158vw;
+z-index: 20;
+}
+#f82 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 158vh;
+right: 20vw;
+z-index: 20;
+}
+#f83 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 170vh;
+right: 44vw;
+z-index: 20;
+}
+#f84 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 174vh;
+right: 50vw;
+z-index: 20;
+}
+#f85 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 163vh;
+right: 49vw;
+z-index: 20;
+}
+#f85 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 157vh;
+right: 35vw;
+z-index: 20;
+}
+#f86 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 146vh;
+right: 69vw;
+z-index: 20;
+}
+#f87 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 176vh;
+right: 54vw;
+z-index: 20;
+}
+#f88 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 167vh;
+right: 111vw;
+z-index: 20;
+}
+#f89 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 178vh;
+right: 99vw;
+z-index: 20;
+}
+#f90 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 117vh;
+right: 127vw;
+z-index: 20;
+}
+#f91 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 87vh;
+right: 108vw;
+z-index: 20;
+}
+#f92 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 109vh;
+right: 78vw;
+z-index: 20;
+}
+#f93 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 150vh;
+right: 78vw;
+z-index: 20;
+}
+#f94 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 160vh;
+right: 88vw;
+z-index: 20;
+}
+#f95 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 138vh;
+right: 138vw;
+z-index: 20;
+}
+#f96 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 132vh;
+right: 146vw;
+z-index: 20;
+}
+#f97 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 151vh;
+right: 134vw;
+z-index: 20;
+}
+#f98 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 146vh;
+right: 159vw;
+z-index: 20;
+}
+#f99 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 179vh;
+right: 5vw;
+z-index: 20;
+}
+#f100 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 178vh;
+right: 15vw;
+z-index: 20;
+}
+#f101 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 186vh;
+right: 33vw;
+z-index: 20;
+}
+#f102 {
+position: absolute;
+font-family: "Ubuntu", sans-serif;
+color: black;
+font-size: 36px;
+top: 159vh;
+right: 39vw;
+z-index: 20;
+}
+
+
+
+
+
+/* BORDER */
+
+.rectangle#left {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  top: 0vh;
+  left: 0vw;
+  z-index: 50;
+}
+
+.rectangle#right {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: black;
+  top: 0vh;
+  right: 0vw;
+  z-index: 50;
+}
+
+.rectangle#top {
+  position: fixed;
+  width: 100vw;
+  height: 250px;
+  background-color: black;
+  top: 0vh;
+  left: 0vw;
+  z-index: 50;
+}
+
+.rectangle#bottom {
+  position: fixed;
+  width: 100vw;
+  height: 250px;
+  background-color: black;
+  bottom: 0vh;
+  left: 0vw;
+  z-index: 50;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="rectangle" id=drag>
+  <a href=sculpture.html><div id=sculpture>Sculpture</div></a>
+  <a href=painting.html><div id=painting>Painting</div></a>
+  <a href=gd1.html><div id=gd>Graphic Design</div></a>
+  <a href=photography.html><div id=photography>Photography</div></a>
+  <a href=contact.html><div id=contact>Contact</div></a>
+  <a href=fayearranz_cv.pdf><div id=resume>Resume</div></a>
+  <a href=Faye.html><div id=faye>Faye</div></a>
+  <div id=f>f</div>
+  <div id=f2>f</div>
+  <div id=f3>f</div>
+  <div id=f4>f</div>
+  <div id=f5>F</div>
+  <div id=f6>f</div>
+  <div id=f7>F</div>
+  <div id=f8>F</div>
+  <div id=f9>F</div>
+  <div id=f10>F</div>
+  <div id=f11>F</div>
+  <div id=f12>F</div>
+  <div id=f13>F</div>
+  <div id=f14>F</div>
+  <div id=f15>F</div>
+  <div id=f16>F</div>
+  <div id=f17>f</div>
+  <div id=f18>f</div>
+  <div id=f19>f</div>
+  <div id=f20>f</div>
+  <div id=f21>F</div>
+  <div id=f22>F</div>
+  <div id=f23>f</div>
+  <div id=f24>f</div>
+  <div id=f25>f</div>
+  <div id=f26>f</div>
+  <div id=f27>f</div>
+  <div id=f28>F</div>
+  <div id=f29>f</div>
+  <div id=f30>F</div>
+  <div id=f31>F</div>
+  <div id=f32>f</div>
+  <div id=f33>f</div>
+  <div id=f34>f</div>
+  <div id=f35>f</div>
+  <div id=f36>f</div>
+  <div id=f37>F</div>
+  <div id=f38>F</div>
+  <div id=f39>F</div>
+  <div id=f40>F</div>
+  <div id=f41>F</div>
+  <div id=f42>F</div>
+  <div id=f43>f</div>
+  <div id=f44>f</div>
+  <div id=f45>f</div>
+  <div id=f46>f</div>
+  <div id=f47>f</div>
+  <div id=f48>F</div>
+  <div id=f49>F</div>
+  <div id=f50>f</div>
+  <div id=f51>f</div>
+  <div id=f52>F</div>
+  <div id=f53>f</div>
+  <div id=f54>F</div>
+  <div id=f55>f</div>
+  <div id=f56>f</div>
+  <div id=f57>f</div>
+  <div id=f58>f</div>
+  <div id=f59>F</div>
+  <div id=f60>f</div>
+  <div id=f61>F</div>
+  <div id=f62>f</div>
+  <div id=f63>F</div>
+  <div id=f64>f</div>
+  <div id=f65>f</div>
+  <div id=f66>F</div>
+  <div id=f67>f</div>
+  <div id=f68>f</div>
+  <div id=f69>F</div>
+  <div id=f70>f</div>
+  <div id=f71>F</div>
+  <div id=f72>f</div>
+  <div id=f73>F</div>
+  <div id=f74>f</div>
+  <div id=f75>f</div>
+  <div id=f76>f</div>
+  <div id=f77>F</div>
+  <div id=f78>F</div>
+  <div id=f79>F</div>
+  <div id=f80>F</div>
+  <div id=f81>f</div>
+  <div id=f82>f</div>
+  <div id=f83>f</div>
+  <div id=f84>f</div>
+  <div id=f85>F</div>
+  <div id=f86>F</div>
+  <div id=f87>F</div>
+  <div id=f88>F</div>
+  <div id=f89>F</div>
+  <div id=f90>f</div>
+  <div id=f91>f</div>
+  <div id=f92>f</div>
+  <div id=f93>f</div>
+  <div id=f94>f</div>
+  <div id=f95>F</div>
+  <div id=f96>f</div>
+  <div id=f97>F</div>
+  <div id=f98>F</div>
+  <div id=f99>F</div>
+  <div id=f100>f</div>
+  <div id=f101>F</div>
+  <div id=f102>f</div>
+</div>
+
+<div class="rectangle" id=right></div>
+<div class="rectangle" id=left></div>
+<div class="rectangle" id=top></div>
+<div class="rectangle" id=bottom></div>
+<!-- <div class="triangle" id=topleft></div>
+<div class="triangle" id=topright></div>
+<div class="triangle" id=bottomleft></div>
+<div class="triangle" id=bottomright></div> -->
+<div id=curved-corner-topleft></div>
+<div id=curved-corner-topright></div>
+<div id=curved-corner-bottomleft></div>
+<div id=curved-corner-bottomright></div>
+
+<!--website for shapes https://css-tricks.com/the-shapes-of-css/ -->
+
+<!-- <div class="circle" id=lense2></div> -->
+<!-- <img id=lense src="micro-01.png"> -->
+
+  <!-- <div class="rectangle" id=frame></div> -->
+
+</body>
+</html>

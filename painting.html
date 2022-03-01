@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Painting</title>
+  <link rel ="shortcut icon" href="f2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+          <script src="painting.js"></script>
+
+  <style>
+
+  body {
+  position: absolute;
+  background-color: #ff3333;
+  }
+
+  .rectangle#side1 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+  z-index: 100;
+  cursor: pointer;
+  }
+
+  #side1:hover {
+  background-color: #0066ff;
+  }
+
+  #pt1 {
+    position: absolute;
+    width: 40vw;
+    top: 21vh;
+    left: 5vw;
+    z-index: 50;
+    display: none;
+  }
+
+  #text1 {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    width: 40vw;
+    font-size: 24px;
+    top: 35vh;
+    left: 55vw;
+    z-index: 60;
+    color: black;
+    display: none;
+  }
+
+  #text1_1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .rectangle#side2 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 50vw;
+  z-index: 50;
+  display: none;
+  cursor: pointer;
+  }
+
+  #side2:hover {
+  background-color: #0066ff;
+  }
+
+  #pt2 {
+    position: absolute;
+    width: 32vw;
+    top: 3vh;
+    left: 58.5vw;
+    z-index: 100;
+    display: none;
+  }
+
+  #text2 {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    width: 40vw;
+    font-size: 24px;
+    top: 35vh;
+    left: 5vw;
+    z-index: 60;
+    color: black;
+    display: none;
+  }
+
+  #text2_1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .rectangle#side3 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+  display: none;
+  cursor: pointer;
+  }
+
+  #side3:hover {
+  background-color: #0066ff;
+  }
+
+  #pt3 {
+    position: absolute;
+    width: 40vw;
+    top: 1vh;
+    left: 5vw;
+    z-index: 50;
+    display: none;
+  }
+
+  #text3 {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    width: 40vw;
+    font-size: 24px;
+    top: 35vh;
+    left: 55vw;
+    z-index: 60;
+    color: black;
+    display: none;
+  }
+
+  #text3_1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .rectangle#side4 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 50vw;
+  display: none;
+  cursor: pointer;
+  }
+
+  #side4:hover {
+  background-color: #0066ff;
+  }
+
+  #pt4 {
+    position: absolute;
+    width: 40vw;
+    top: 18vh;
+    left: 55vw;
+    z-index: 100;
+    display: none;
+  }
+
+  #text4 {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    width: 40vw;
+    font-size: 24px;
+    top: 35vh;
+    left: 5vw;
+    z-index: 60;
+    color: black;
+    display: none;
+  }
+
+  #text4_1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .rectangle#side5 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+  display: none;
+  cursor: pointer;
+  }
+
+  #side5:hover {
+  background-color: #0066ff;
+  }
+
+  #pt5 {
+    position: absolute;
+    width: 40vw;
+    top: 17vh;
+    left: 5vw;
+    z-index: 50;
+    display: none;
+  }
+
+  #text5 {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    width: 40vw;
+    font-size: 24px;
+    top: 35vh;
+    left: 55vw;
+    z-index: 60;
+    color: black;
+    display: none;
+  }
+
+  #text5_1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .rectangle#side6 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 50vw;
+  display: none;
+  cursor: pointer;
+  }
+
+  #side6:hover {
+  background-color: #0066ff;
+  }
+
+  #pt6 {
+    position: absolute;
+    width: 40vw;
+    top: 18vh;
+    left: 55vw;
+    z-index: 100;
+    display: none;
+  }
+
+  #text6 {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    width: 40vw;
+    font-size: 24px;
+    top: 35vh;
+    left: 5vw;
+    z-index: 60;
+    color: black;
+    display: none;
+  }
+
+  #text6_1 {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  /* .rectangle#side7 {
+  position: absolute;
+  background-color: #ff3333;
+  width: 50vw;
+  height: 100vh;
+  top: 0vh;
+  left: 0vw;
+  }
+
+  #side7:hover {
+  background-color: #0066ff;
+  }
+
+  #pt7 {
+    position: absolute;
+    width: 40vw;
+    top: 20vh;
+    left: 5vw;
+    z-index: 50;
+  } */
+
+  .circle#face {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffd9b3;
+  /* top:3vh;
+  left: 4vw; */
+  /* margin: 31.5px 0px 0px 51.6px; */
+  top: 31.50px;
+  left:51.6px;
+  z-index: 200;
+  cursor: pointer;
+  }
+
+  .rectangle#hair1 {
+  position: fixed;
+  height: 16.6666px;
+  width: 58.333px;
+  background-color: #00004d;
+  border-radius: 90px 90px 0px 0px;
+  /* margin: 21px 0px 0px 48.375px; */
+  /* top: 2vh;
+  left: 3.75vw; */
+  top: 21px;
+  left: 48.375px;
+  z-index: 190;
+  cursor: pointer;
+  }
+
+  .rectangle#hair2 {
+  position: fixed;
+  height: 66.66666px;
+  width: 13.3333px;
+  background-color: #00004d;
+  border-radius: 40px 0px 0px 0px;
+  /* margin: 26.25px 0px 0px 48.375px; */
+  /* top:2.5vh;
+  left: 3.75vw; */
+  top: 26.25px;
+  left: 48.375px;
+  z-index: 210;
+  cursor: pointer;
+  }
+
+  .rectangle#hair3 {
+  position: fixed;
+  height: 66.66666px;
+  width: 13.3333px;
+  background-color: #00004d;
+  border-radius: 0px 40px 0px 0px;
+  /* margin: 26.25px 0px 0px 94.17px; */
+  /* top: 2.5vh;
+  left: 7.3vw; */
+  top: 26.25px;
+  left: 94.17px;
+  z-index: 210;
+  cursor: pointer;
+  }
+
+  .circle#hair4 {
+  position: fixed;
+  height: 25px;
+  width: 8.3333px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 28.875px 0px 0px 90.3px; */
+  /* top: 2.75vh;
+  left: 7vw; */
+  top: 28.875px;
+  left: 90.3px;
+  transform: rotate(140deg);
+  z-index: 210;
+  cursor: pointer;
+  }
+
+  .circle#hair5 {
+  position: fixed;
+  height: 25px;
+  width: 8.3333px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 28.875px 0px 0px 58.05px; */
+  /* top: 2.75vh;
+  left: 4.5vw; */
+  top: 28.875px;
+  left: 58.05px;
+  transform: rotate(40deg);
+  z-index: 210;
+  cursor: pointer;
+  }
+
+  .circle#eye1 {
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    background-color: #264d00;
+    border-radius: 50%;
+    /* margin: 52.5px 0px 0px 64.5px; */
+    /* left: 5vw;
+    top: 5vh; */
+    top: 52.5px;
+    left: 64.5px;
+    z-index: 210;
+    cursor: pointer;
+  }
+
+  .circle#eye2 {
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    background-color: #264d00;
+    border-radius: 50%;
+    /* margin: 52.5px 0px 0px 87.075px; */
+    /* left: 6.75vw;
+    top: 5vh; */
+    top: 52.5px;
+    left: 87.075px;
+    z-index: 210;
+    cursor: pointer;
+  }
+
+  .rectangle#smile1 {
+    position: fixed;
+    height: 3.333333px;
+    width: 0.83333px;
+    background-color: black;
+    /* margin: 65.625px 0px 0px 66.435px; */
+    /* left: 5.15vw;
+    top: 6.25vh; */
+    top: 65.625px;
+    left: 66.435px;
+    z-index: 210;
+    cursor: pointer;
+  }
+
+  .rectangle#smile2{
+    position: fixed;
+    height: 0.833333px;
+    width: 22.33333px;
+    background-color: black;
+    /* margin: 68.25px 0px 0px  65.78999999999999px; */
+    /* left: 5.10vw;
+    top: 6.5vh; */
+    top: 68.25px;
+    left: 65.7899999999999999px;
+    z-index: 210;
+    cursor: pointer;
+  }
+
+  .rectangle#smile3 {
+    position: fixed;
+    height: 3.333333px;
+    width: 0.833333px;
+    background-color: black;
+    /* margin: 65.625px 0px 0px 88.365px; */
+    /* left: 6.85vw;
+    top: 6.25vh; */
+    top: 65.625px;
+    left: 88.365px;
+    z-index: 210;
+    cursor: pointer;
+  }
+
+  #painting {
+  position: fixed;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  top: 15px;
+  left: 120px;
+  z-index: 110;
+  text-shadow: 2px 2px #ff3333;
+  }
+
+
+  </style>
+  </head>
+  <body>
+
+  <div class="rectangle" id=side1></div>
+  <div id=text1><span id=text1_1>Saturday Morning</span><br>
+    Painting depicting father sleeping, a collage of patterns next to subject represents dreaming.<br>
+    Painted from observation.<br>
+    <br>
+    Size: 24" height x 36" width<br>
+    Medium: Oil painting on canvas<br>
+    Year: 2019</div>
+
+  <div class="rectangle" id=side2></div>
+  <div id=text2><span id=text2_1>Pondering Time: Self Portrait</span><br>
+    Brooklyn Museum Exhibition, Teens: Gallery/Studio Program, January-February 2019.<br>
+    Part of the Work-Study Program.<br>
+    Clothing design inspired by The Rainbow Fish, the sweater being the body of the fish,
+    and the pants being the tail. Self constructed canvas.<br>
+    Paint from observation.<br>
+    <br>
+    Size: 36" height x 24" width<br>
+    Medium: Acrylic painting on canvas<br>
+    Year: 2019</div>
+
+  <div class="rectangle" id=side3></div>
+  <div id=text3><span id=text3_1>Corner of the Master Bedroom</span><br>
+    One of the pieces included in my series of Home from Advanced Painting course at
+    Fiorello H. LaGuardia High School.<br>
+    Painted from observation.<br>
+    <br>
+    Size: 26" height x 20" width<br>
+    Medium: Acrylic painting on Bristol paper<br>
+    Year: 2018</div>
+
+  <div class="rectangle" id=side4></div>
+  <div id=text4><span id=text4_1>Sugar Frenzy</span><br>
+    Included in Fiorello H. LaGuardia High School, NYC, Spring 2019, Student Exhibition.<br>
+    Painted from observation<br>
+    <br>
+    Size: 16" height x 20" width<br>
+    Medium: Oil painting on canvas<br>
+    Year: 2019</div>
+
+  <div class="rectangle" id=side5></div>
+  <div id=text5><span id=text5_1>Green & Red Peppers</span><br>
+    Oil study<br>
+    Painted from observation<br>
+    <br>
+    Size: 12" height x 14" width<br>
+    Medium: Oil painting on canvas<br>
+    Year: 2019</div>
+
+  <div class="rectangle" id=side6></div>
+  <div id=text6><span id=text6_1>The Scream</span><br>
+    Hour long painting challenge that was limited to only five colors.<br>
+    <br>
+    Size: 18" height x 24" wisth<br>
+    Medium: Tempera painting on heavy weight canvas<br>
+    Year: 2019</div>
+
+  <!-- <div class="rectangle" id=side7></div> -->
+
+  <img id=pt1 src="pt1.jpg">
+  <img id=pt2 src="pt2.jpg">
+  <img id=pt3 src="pt3.jpg">
+  <img id=pt4 src="pt4.jpg">
+  <img id=pt5 src="pt5.jpg">
+  <img id=pt6 src="pt6.jpg">
+
+  <div id=painting>Painting</div>
+
+  <a href=menu.html>
+      <div class="circle" id=face></div>
+      <div class="rectangle" id=hair1></div>
+      <div class="rectangle" id=hair2></diV>
+      <div class="rectangle" id=hair3></div>
+      <div class="circle" id=hair4></div>
+      <div class="circle" id=hair5></div>
+      <div class="circle" id=eye1></div>
+      <div class="circle" id=eye2></div>
+      <div class="rectangle" id=smile1></div>
+      <div class="rectangle" id=smile2></div>
+      <div class="rectangle" id=smile3></div></a>
+
+  </body>
+</html>

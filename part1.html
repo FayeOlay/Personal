@@ -1,0 +1,363 @@
+<!doctype hmtl>
+<html>
+  <head>
+  <title>Faye's Portfolio</title>
+  <link rel ="shortcut icon" href="f2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+          <script src="part1.js"></script>
+  <style>
+
+  body {
+  background-color: #ff3333;
+  }
+
+  .circle#face {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: #ffd9b3;
+  top:31vh;
+  left: 45vw;
+  /* margin: 300px 0px 0px 380px; */
+  z-index: 50;
+  cursor: pointer;
+  }
+
+  .rectangle#hair1 {
+  position: fixed;
+  height: 100px;
+  width: 350px;
+  background-color: #00004d;
+  border-radius: 90px 90px 0px 0px;
+  /* margin: 270px 0px 0px 356px; */
+  top: 24.5vh;
+  left: 43.5vw;
+  z-index: 40;
+  cursor: pointer;
+  }
+
+  .rectangle#hair2 {
+  position: fixed;
+  height: 400px;
+  width: 80px;
+  background-color: #00004d;
+  border-radius: 40px 0px 0px 0px;
+  /* margin: 320px 0px 0px 356px; */
+  top:30.563514804202484vh;
+  left: 43.5vw;
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .rectangle#hair3 {
+  position: fixed;
+  height: 400px;
+  width: 80px;
+  background-color: #00004d;
+  border-radius: 0px 40px 0px 0px;
+  /* margin: 320px 0px 0px 625px; */
+  top: 30.563514804202484vh;
+  left: 59.4vw;
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .circle#hair4 {
+  position: fixed;
+  height: 150px;
+  width: 50px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 270px 0px 0px 580px; */
+  top: 25.787965616045845vh;
+  left: 56vw;
+  transform: rotate(140deg);
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .circle#hair5 {
+  position: fixed;
+  height: 150px;
+  width: 50px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 270px 0px 0px 430px; */
+  top: 25.787965616045845vh;
+  left: 48.5vw;
+  transform: rotate(40deg);
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .circle#eye1 {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: #264d00;
+    border-radius: 50%;
+    left: 49vw;
+    top: 44vh;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .circle#eye2 {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: #264d00;
+    border-radius: 50%;
+    left: 56.5vw;
+    top: 44vh;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .rectangle#smile1 {
+    position: fixed;
+    height: 20px;
+    width: 5px;
+    background-color: black;
+    left: 49.5vw;
+    top: 51vh;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .rectangle#smile2{
+    position: fixed;
+    height: 5px;
+    width: 134px;
+    background-color: black;
+    left: 49.5vw;
+    top: 52.5vh;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .rectangle#smile3 {
+    position: fixed;
+    height: 20px;
+    width: 5px;
+    background-color: black;
+    left: 57.25vw;
+    top: 51vh;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .circle#talk {
+    position: fixed;
+    height: 20px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    left: 52.10vw;
+    top: 53vh;
+    z-index: 60;
+    display: none;
+  }
+
+  #text1 {
+    position: fixed;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 72px;
+    color: black;
+    top: 83vh;
+    left: 24vw;
+    text-align: center;
+    display: none;
+  }
+
+  #browse {
+    cursor: pointer;
+  }
+
+  #text2 {
+    position: fixed;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 72px;
+    color: black;
+    top: 83vh;
+    left: 30vw;
+    text-align: center;
+    display: none;
+  }
+
+  .rectangle#frame {
+    position: fixed;
+    border: 3px solid black;
+    margin: 0px 0px 0px 0px;
+    height: 900px;
+    width: 1050px;
+    }
+
+/* TALK 2 */
+
+.circle#face_2 {
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: #ffd9b3;
+  top:31vh;
+  left: 45vw;
+  /* margin: 300px 0px 0px 380px; */
+  z-index: 50;
+  cursor: pointer;
+  display: none;
+}
+
+.rectangle#hair1_2 {
+  position: fixed;
+  height: 100px;
+  width: 350px;
+  background-color: #00004d;
+  border-radius: 90px 90px 0px 0px;
+  /* margin: 270px 0px 0px 356px; */
+  top: 24.5vh;
+  left: 43.5vw;
+  z-index: 40;
+  cursor: pointer;
+  display: none;
+}
+
+.rectangle#hair2_2 {
+  position: fixed;
+  height: 400px;
+  width: 80px;
+  background-color: #00004d;
+  border-radius: 40px 0px 0px 0px;
+  /* margin: 320px 0px 0px 356px; */
+  top:30.563514804202484vh;
+  left: 43.5vw;
+  z-index: 60;
+  cursor: pointer;
+  display: none;
+}
+
+.rectangle#hair3_2 {
+  position: fixed;
+  height: 400px;
+  width: 80px;
+  background-color: #00004d;
+  border-radius: 0px 40px 0px 0px;
+  /* margin: 320px 0px 0px 625px; */
+  top: 30.563514804202484vh;
+  left: 59.4vw;
+  z-index: 60;
+  cursor: pointer;
+  display: none;
+}
+
+.circle#hair4_2 {
+  position: fixed;
+  height: 150px;
+  width: 50px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 270px 0px 0px 580px; */
+  top: 25.787965616045845vh;
+  left: 56vw;
+  transform: rotate(140deg);
+  z-index: 60;
+  cursor: pointer;
+  display: none;
+}
+
+.circle#hair5_2 {
+  position: fixed;
+  height: 150px;
+  width: 50px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 270px 0px 0px 430px; */
+  top: 25.787965616045845vh;
+  left: 48.5vw;
+  transform: rotate(40deg);
+  z-index: 60;
+  cursor: pointer;
+  display: none;
+}
+
+.circle#eye1_2 {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background-color: #264d00;
+  border-radius: 50%;
+  left: 49vw;
+  top: 44vh;
+  z-index: 60;
+  cursor: pointer;
+  display: none;
+}
+
+.circle#eye2_2 {
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  background-color: #264d00;
+  border-radius: 50%;
+  left: 56.5vw;
+  top: 44vh;
+  z-index: 60;
+  cursor: pointer;
+  display: none;
+}
+
+.circle#talk_2 {
+  position: fixed;
+  height: 20px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  left: 52.10vw;
+  top: 53vh;
+  z-index: 60;
+  display: none;
+}
+
+  </style>
+  </head>
+  <body>
+
+<!-- TALK 1 -->
+
+  <div class="circle" id=face></div>
+  <div class="rectangle" id=hair1></div>
+  <div class="rectangle" id=hair2></diV>
+  <div class="rectangle" id=hair3></div>
+  <div class="circle" id=hair4></div>
+  <div class="circle" id=hair5></div>
+  <div class="circle" id=eye1></div>
+  <div class="circle" id=eye2></div>
+  <div class="rectangle" id=smile1></div>
+  <div class="rectangle" id=smile2></div>
+  <div class="rectangle" id=smile3></div>
+  <div class="circle" id=talk></div>
+  <div id=text1>Hi! Welcome to Faye's Portfolio.</div>
+
+<!-- TALK 2 -->
+
+    <div class="circle" id=face_2></div>
+    <div class="rectangle" id=hair1_2></div>
+    <div class="rectangle" id=hair2_2></diV>
+    <div class="rectangle" id=hair3_2></div>
+    <div class="circle" id=hair4_2></div>
+    <div class="circle" id=hair5_2></div>
+    <div class="circle" id=eye1_2></div>
+    <div class="circle" id=eye2_2></div>
+    <div class="circle" id=talk_2></div>
+   <div id=text2>Are you ready to <a href="menu.html"><span id=browse>browse</span></a>?</div>
+
+  <!-- <div class="rectangle" id=frame></div> -->
+</body>
+</html>

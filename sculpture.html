@@ -1,0 +1,615 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Sculpture</title>
+  <link rel ="shortcut icon" href="f2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+          <script src="sculpture.js"></script>
+  <style>
+
+  body {
+  position: absolute;
+  background-color: white;
+  }
+
+  .rectangle#red {
+    position: absolute;
+    background-color: #ff3333;
+    top: 0vh;
+    left: 0vw;
+    width: 1040px;
+    height: 940px;
+    z-index: 10;
+  }
+
+  #sculpture {
+    position: fixed;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    top: 15px;
+    left: 120px;
+    z-index: 110;
+    /* text-shadow: 2px 2px #ff3333; */
+  }
+
+  #paragraph1 {
+  position: absolute;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.4606299212598426vw;
+  width: 39.37007874015748vw;
+  text-align: center;
+  top: 11vh;
+  left: 1vw;
+  z-index: 110;
+  }
+
+  #p1 {
+    position: absolute;
+    width: 56.63048607833884vw;
+    top: 5vh;
+    left: 40vw;
+    z-index: 20;
+  }
+
+  .rectangle#r1{
+    position: absolute;
+    width: 56.63048607833884vw;
+    height: 80vh;
+    top: 5vh;
+    left: 40vw;
+    z-index: 50;
+    background-color: white;
+  }
+
+  #p2 {
+    position: absolute;
+    width: 22.634676324128566vw;
+    top: 22vh;
+    left: 20vw;
+    z-index: 60;
+  }
+
+  .rectangle#r2{
+    position: absolute;
+    width: 22.634676324128566vw;
+    height: 35vh;
+    top: 22vh;
+    left: 20vw;
+    z-index: 70;
+    background-color: white;
+  }
+
+
+  #p3 {
+    position: absolute;
+    width: 18.107741059302853vw;
+    top: 50vh;
+    left: 2vw;
+  }
+
+  .rectangle#r3 {
+    position: absolute;
+    width: 18.107741059302853vw;
+    height: 32vh;
+    top: 50vh;
+    left: 2vw;
+    z-index: 50;
+    background-color: white;
+  }
+
+  /* #p4 {
+    position: absolute;
+    width: 300px;
+    top: 45vh;
+    left: 30vw;
+    z-index: 40;
+  } */
+
+  #p5 {
+    position: absolute;
+    width: 45.26935264825713vw;
+    top: 90vh;
+    left: 5vw;
+    z-index: 30;
+  }
+
+  .rectangle#r5 {
+    position: absolute;
+    width: 45.26935264825713vw;
+    height: 75vh;
+    top: 90vh;
+    left: 5vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p6 {
+    position: absolute;
+    width: 13.580805794477138vw;
+    top: 99vh;
+    left: 57vw;
+    z-index:100;
+  }
+
+  .rectangle#r6 {
+    position: absolute;
+    width: 13.580805794477138vw;
+    height: 20vh;
+    top: 99vh;
+    left: 57vw;
+    z-index:100;
+    background-color: white;
+  }
+
+  #p7 {
+    position: absolute;
+    width: 36.215482118605706vw;
+    top: 124vh;
+    left: 60vw;
+    z-index: 30;
+  }
+
+  .rectangle#r7 {
+    position: absolute;
+    width: 36.215482118605706vw;
+    height: 54vh;
+    top: 124vh;
+    left: 60vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p9 {
+    position: absolute;
+    width: 36.215482118605706vw;
+    top: 190vh;
+    left: 40vw;
+    z-index: 30;
+  }
+
+  .rectangle#r9 {
+    position: absolute;
+    width: 36.215482118605706vw;
+    height: 61vh;
+    top: 190vh;
+    left: 40vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p8 {
+    position: absolute;
+    width: 29vw;
+    top: 210vh;
+    left: 10vw;
+    z-index: 30;
+  }
+
+  .rectangle#r8 {
+    position: absolute;
+    height: 49vh;
+    width: 29vw;
+    top: 210vh;
+    left: 10vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p10 {
+    position: absolute;
+    width: 40vw;
+    top: 260vh;
+    left: 5vw;
+    z-index: 30;
+  }
+
+  .rectangle#r10 {
+    position: absolute;
+    height: 68vh;
+    width: 40vw;
+    top: 260vh;
+    left: 5vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p11 {
+    position: absolute;
+    width: 55vw;
+    top: 252vh;
+    left: 46vw;
+    z-index: 30;
+  }
+
+  .rectangle#r11 {
+    position: absolute;
+    height: 93vh;
+    width: 55vw;
+    top: 252vh;
+    left: 46vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p15 {
+    position: absolute;
+    width: 15vw;
+    top: 340vh;
+    left: 4vw;
+    z-index: 30;
+  }
+
+  .rectangle#r15 {
+    position: absolute;
+    height: 21.75vh;
+    width: 15vw;
+    top: 340vh;
+    left: 4vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p12 {
+    position: absolute;
+    width: 30vw;
+    top: 365vh;
+    left: 8vw;
+    z-index: 30;
+  }
+
+  .rectangle#r12 {
+    position: absolute;
+    width: 30vw;
+    height: 47vh;
+    top: 365vh;
+    left: 8vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p13 {
+    position: absolute;
+    width: 25vw;
+    top: 350vh;
+    left: 70vw;
+    z-index: 30;
+  }
+
+  .rectangle#r13 {
+    position: absolute;
+    width: 25vw;
+    height: 38vh;
+    top: 350vh;
+    left: 70vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p14 {
+    position: absolute;
+    width: 100vw;
+    top: 420vh;
+    left: 0vw;
+    z-index: 30;
+  }
+
+  .rectangle#r14 {
+    position: absolute;
+    width: 100vw;
+    height: 160vh;
+    top: 420vh;
+    left: 0vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p16 {
+    position: absolute;
+    width: 100vw;
+    top: 580vh;
+    left: 0vw;
+    z-index: 30;
+  }
+
+  .rectangle#r16 {
+    position: absolute;
+    width: 100vw;
+    height: 146vh;
+    top: 580vh;
+    left: 0vw;
+    z-index: 90;
+    background-color: white;
+  }
+
+  #p17 {
+    position: absolute;
+    width: 30vw;
+    top: 700vh;
+    left: 65vw;
+    z-index: 30;
+    transform: rotate(90deg);
+  }
+
+  .rectangle#r17 {
+    position: absolute;
+    width: 40vw;
+    height: 58vh;
+    top: 709.75vh;
+    left: 60vw;
+    z-index: 80;
+    background-color: white;
+    /* transform: rotate(90deg); */
+  }
+
+  #p18 {
+    position: absolute;
+    width: 15vw;
+    top: 730vh;
+    left: 4vw;
+    z-index: 30;
+  }
+
+  .rectangle#r18 {
+    position: absolute;
+    height: 24vh;
+    width: 15vw;
+    top: 730vh;
+    left: 4vw;
+    z-index: 100;
+    background-color: white;
+  }
+
+  #p19 {
+    position: absolute;
+    width: 30vw;
+    top: 760vh;
+    left: 26vw;
+    z-index: 30;
+  }
+
+  .rectangle#r19 {
+    position: absolute;
+    width: 30vw;
+    height: 70vh;
+    top: 760vh;
+    left: 26vw;
+    z-index: 100;
+    background-color: white;
+    padding: 0px 0px 200px 0px;
+  }
+
+
+/* FA Icon */
+
+  .circle#face {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ffd9b3;
+  /* top:3vh;
+  left: 4vw; */
+  /* margin: 31.5px 0px 0px 51.6px; */
+  top: 31.50px;
+  left:51.6px;
+  z-index: 50;
+  cursor: pointer;
+  }
+
+  .rectangle#hair1 {
+  position: fixed;
+  height: 16.6666px;
+  width: 58.333px;
+  background-color: #00004d;
+  border-radius: 90px 90px 0px 0px;
+  /* margin: 21px 0px 0px 48.375px; */
+  /* top: 2vh;
+  left: 3.75vw; */
+  top: 21px;
+  left: 48.375px;
+  z-index: 40;
+  cursor: pointer;
+  }
+
+  .rectangle#hair2 {
+  position: fixed;
+  height: 66.66666px;
+  width: 13.3333px;
+  background-color: #00004d;
+  border-radius: 40px 0px 0px 0px;
+  /* margin: 26.25px 0px 0px 48.375px; */
+  /* top:2.5vh;
+  left: 3.75vw; */
+  top: 26.25px;
+  left: 48.375px;
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .rectangle#hair3 {
+  position: fixed;
+  height: 66.66666px;
+  width: 13.3333px;
+  background-color: #00004d;
+  border-radius: 0px 40px 0px 0px;
+  /* margin: 26.25px 0px 0px 94.17px; */
+  /* top: 2.5vh;
+  left: 7.3vw; */
+  top: 26.25px;
+  left: 94.17px;
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .circle#hair4 {
+  position: fixed;
+  height: 25px;
+  width: 8.3333px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 28.875px 0px 0px 90.3px; */
+  /* top: 2.75vh;
+  left: 7vw; */
+  top: 28.875px;
+  left: 90.3px;
+  transform: rotate(140deg);
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .circle#hair5 {
+  position: fixed;
+  height: 25px;
+  width: 8.3333px;
+  background-color: #00004d;
+  border-radius: 50%;
+  /* margin: 28.875px 0px 0px 58.05px; */
+  /* top: 2.75vh;
+  left: 4.5vw; */
+  top: 28.875px;
+  left: 58.05px;
+  transform: rotate(40deg);
+  z-index: 60;
+  cursor: pointer;
+  }
+
+  .circle#eye1 {
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    background-color: #264d00;
+    border-radius: 50%;
+    /* margin: 52.5px 0px 0px 64.5px; */
+    /* left: 5vw;
+    top: 5vh; */
+    top: 52.5px;
+    left: 64.5px;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .circle#eye2 {
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    background-color: #264d00;
+    border-radius: 50%;
+    /* margin: 52.5px 0px 0px 87.075px; */
+    /* left: 6.75vw;
+    top: 5vh; */
+    top: 52.5px;
+    left: 87.075px;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .rectangle#smile1 {
+    position: fixed;
+    height: 3.333333px;
+    width: 0.83333px;
+    background-color: black;
+    /* margin: 65.625px 0px 0px 66.435px; */
+    /* left: 5.15vw;
+    top: 6.25vh; */
+    top: 65.625px;
+    left: 66.435px;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .rectangle#smile2{
+    position: fixed;
+    height: 0.833333px;
+    width: 22.33333px;
+    background-color: black;
+    /* margin: 68.25px 0px 0px  65.78999999999999px; */
+    /* left: 5.10vw;
+    top: 6.5vh; */
+    top: 68.25px;
+    left: 65.7899999999999999px;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  .rectangle#smile3 {
+    position: fixed;
+    height: 3.333333px;
+    width: 0.833333px;
+    background-color: black;
+    /* margin: 65.625px 0px 0px 88.365px; */
+    /* left: 6.85vw;
+    top: 6.25vh; */
+    top: 65.625px;
+    left: 88.365px;
+    z-index: 60;
+    cursor: pointer;
+  }
+
+  </style>
+  </head>
+  <body>
+      <!-- <div class="rectangle" id=red></div> -->
+  <img id=p1 src="p1_1.jpg">
+  <div class="rectangle" id=r1></div>
+  <img id=p2 src="p1_2.jpg">
+  <div class="rectangle" id=r2></div>
+  <img id=p3 src="p1_3.jpg">
+  <div class="rectangle" id=r3></div>
+  <!-- <img id=p4 src="p1_4.jpg"> -->
+  <img id=p5 src="p1_5.jpg">
+  <div class="rectangle" id=r5></div>
+  <img id=p6 src="p1_6.jpg">
+  <div class="rectangle" id=r6></div>
+  <img id=p7 src="p1_7.jpg">
+  <div class="rectangle" id=r7></div>
+
+  <img id=p8 src="p2_1.jpg">
+  <div class="rectangle" id=r8></div>
+  <img id=p9 src="p2_2.jpg">
+  <div class="rectangle" id=r9></div>
+  <img id=p10 src="p2_3.jpg">
+  <div class="rectangle" id=r10></div>
+  <img id=p11 src="p2_4.jpg">
+  <div class="rectangle" id=r11></div>
+
+  <img id=p12 src="p4_1.jpg">
+  <div class="rectangle" id=r12></div>
+  <img id=p13 src="p4_2.jpg">
+  <div class="rectangle" id=r13></div>
+  <img id=p14 src="p4_3.jpg">
+  <div class="rectangle" id=r14></div>
+  <img id=p15 src="p4_4.jpg">
+  <div class="rectangle" id=r15></div>
+  <img id=p16 src="p4_5.jpg">
+  <div class="rectangle" id=r16></div>
+  <img id=p17 src="p4_6.jpg">
+  <div class="rectangle" id=r17></div>
+  <img id=p18 src="p4_7.jpg">
+  <div class="rectangle" id=r18></div>
+  <img id=p19 src="p4_9.jpg">
+  <div class="rectangle" id=r19></div>
+  <div id=sculpture>Sculpture</div>
+  <div id=paragraph1>Scan the page with your mouse to discover hidden photos.
+
+<a href=menu.html>
+    <div class="circle" id=face></div>
+    <div class="rectangle" id=hair1></div>
+    <div class="rectangle" id=hair2></diV>
+    <div class="rectangle" id=hair3></div>
+    <div class="circle" id=hair4></div>
+    <div class="circle" id=hair5></div>
+    <div class="circle" id=eye1></div>
+    <div class="circle" id=eye2></div>
+    <div class="rectangle" id=smile1></div>
+    <div class="rectangle" id=smile2></div>
+    <div class="rectangle" id=smile3></div></a>
+  </body>
+</html>

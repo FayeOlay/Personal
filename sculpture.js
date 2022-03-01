@@ -1,0 +1,60 @@
+$(document).ready(function() {
+
+$("#r1").hover(function(){
+                $("#r1").hide();
+                });
+                $("#r2").hover(function(){
+                                $("#r2").hide();
+                                });
+                                $("#r3").hover(function(){
+                                                $("#r3").hide();
+                                                });
+                                                $("#r4").hover(function(){
+                                                                $("#r4").hide();
+                                                                });
+                                                                $("#r5").hover(function(){
+                                                                                $("#r5").hide();
+                                                                                });
+                                                                                $("#r6").hover(function(){
+                                                                                                $("#r6").hide();
+                                                                                                });
+                                                                                                $("#r7").hover(function(){
+                                                                                                                $("#r7").hide();
+                                                                                                                });
+                                                                                                                $("#r8").hover(function(){
+                                                                                                                                $("#r8").hide();
+                                                                                                                                });
+$("#r9").hover(function(){
+$("#r9").hide();
+});
+$("#r10").hover(function(){
+$("#r10").hide();
+});
+$("#r11").hover(function(){
+$("#r11").hide();
+});
+$("#r12").hover(function(){
+$("#r12").hide();
+});
+$("#r13").hover(function(){
+$("#r13").hide();
+});
+$("#r14").hover(function(){
+$("#r14").hide();
+});
+$("#r15").hover(function(){
+$("#r15").hide();
+});
+$("#r16").hover(function(){
+$("#r16").hide();
+});
+$("#r17").hover(function(){
+$("#r17").hide();
+});
+$("#r18").hover(function(){
+$("#r18").hide();
+});
+$("#r19").hover(function(){
+$("#r19").hide();
+});
+})

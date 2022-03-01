@@ -1,0 +1,482 @@
+<!doctype html>
+<html>
+<head>
+  <title>Graphic Design</title>
+  <link rel ="shortcut icon" href="f2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+          <script src="gd.js"></script>
+<style>
+
+body {
+position: absolute;
+background-color: white;
+}
+
+/* BOOK */
+
+#text1 {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-size:  4vw;
+  color: black;
+  top: 15vh;
+  left: 2vw;
+  width: 100vw;
+}
+
+#text2 {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-size:  2.5vw;
+  color: black;
+  top: 250vh;
+  left: 60vw;
+  width: 30vw;
+  text-align: center;
+}
+
+#f {
+  font-style: italic;
+}
+
+#gd1 {
+  position: absolute;
+  width: 50vw;
+  top: 28vh;
+  left: 2vw;
+}
+
+#gd4 {
+  position: absolute;
+  width: 30vw;
+  top: 28vh;
+  left: 60vw;
+}
+
+#gd3 {
+  position: absolute;
+  width: 30vw;
+  top: 83vh;
+  left: 60vw;
+}
+
+#gd6 {
+  position: absolute;
+  width: 30vw;
+  top: 138vh;
+  left: 60vw;
+}
+
+#gd5 {
+  position: absolute;
+  width: 50vw;
+  top: 118vh;
+  left: 2vw;
+}
+
+#gd2 {
+  position: absolute;
+  width: 30vw;
+  top: 193vh;
+  left: 60vw;
+}
+
+#gd7 {
+  position: absolute;
+  width: 50vw;
+  top: 208vh;
+  left: 2vw;
+}
+
+/* MANTRA MERCH */
+
+.rectangle#line2 {
+  position: absolute;
+  background-color: black;
+  top: 300vh;
+  width: 100vw;
+  height: 15px;
+  left: 0vw;
+}
+
+#text3 {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-size:  4vw;
+  color: black;
+  top: 305vh;
+  left: 8vw;
+  width: 100vw;
+}
+
+#gd11 {
+  position: absolute;
+  width: 26.66666vw;
+  left: 5vw;
+  top: 317vh;
+}
+
+#gd13 {
+  position: absolute;
+  width: 26.66666vw;
+  left: 35.5vw;
+  top: 317vh;
+}
+
+#gd12 {
+  position: absolute;
+  width: 26.66666vw;
+  left: 66vw;
+  top: 317vh;
+}
+
+#gd14 {
+  position: absolute;
+  width: 30vw;
+  left: 5vw;
+  top: 380vh;
+}
+
+#gd15 {
+  position: absolute;
+  width: 20vw;
+  left: 69vw;
+  top: 384vh;
+}
+
+#gd16 {
+  position: absolute;
+  width: 20vw;
+  left: 39vw;
+  top: 365vh;
+}
+
+#gd17 {
+  position: absolute;
+  width: 20vw;
+  left: 69vw;
+  top: 425vh;
+}
+
+#gd18 {
+  position: absolute;
+  width: 20vw;
+  left: 69vw;
+  top: 467vh;
+}
+
+#gd10 {
+  position: absolute;
+  width: 60vw;
+  left: 5vw;
+  top: 485vh;
+}
+
+/* YES POSTER */
+
+.rectangle#line2 {
+  position: absolute;
+  background-color: black;
+  top: 580vh;
+  width: 100vw;
+  height: 15px;
+  left: 0vw;
+}
+
+#text4 {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-size:  4vw;
+  color: black;
+  top: 590vh;
+  left: 0vw;
+  width: 100vw;
+  text-align: center;
+}
+
+#gd8 {
+  position: absolute;
+  width: 45vw;
+  left:2vw;
+  top: 610vh;
+    padding: 0px 0px 100px 0px;
+}
+
+#gd9 {
+  position: absolute;
+  width: 45vw;
+  left:50vw;
+  top: 610vh;
+  padding: 0px 0px 100px 0px;
+}
+
+#text5 {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-size:  2vw;
+  color: black;
+  /* top: 705vh; */
+  bottom: 5vh;
+  left: 21vw;
+  text-align: center;
+}
+
+#text6 {
+  position: absolute;
+  font-family: "Ubuntu", sans-serif;
+  font-size:  2vw;
+  color: black;
+  /* top: 705vh; */
+  bottom: 5vh;
+  left: 71vw;
+  text-align: center;
+}
+
+/* FAYE ICON */
+
+.circle#face {
+position: fixed;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+background-color: #ffd9b3;
+/* top:3vh;
+left: 4vw; */
+/* margin: 31.5px 0px 0px 51.6px; */
+top: 31.50px;
+left:51.6px;
+z-index: 200;
+cursor: pointer;
+}
+
+.rectangle#hair1 {
+position: fixed;
+height: 16.6666px;
+width: 58.333px;
+background-color: #00004d;
+border-radius: 90px 90px 0px 0px;
+/* margin: 21px 0px 0px 48.375px; */
+/* top: 2vh;
+left: 3.75vw; */
+top: 21px;
+left: 48.375px;
+z-index: 190;
+cursor: pointer;
+}
+
+.rectangle#hair2 {
+position: fixed;
+height: 66.66666px;
+width: 13.3333px;
+background-color: #00004d;
+border-radius: 40px 0px 0px 0px;
+/* margin: 26.25px 0px 0px 48.375px; */
+/* top:2.5vh;
+left: 3.75vw; */
+top: 26.25px;
+left: 48.375px;
+z-index: 210;
+cursor: pointer;
+}
+
+.rectangle#hair3 {
+position: fixed;
+height: 66.66666px;
+width: 13.3333px;
+background-color: #00004d;
+border-radius: 0px 40px 0px 0px;
+/* margin: 26.25px 0px 0px 94.17px; */
+/* top: 2.5vh;
+left: 7.3vw; */
+top: 26.25px;
+left: 94.17px;
+z-index: 210;
+cursor: pointer;
+}
+
+.circle#hair4 {
+position: fixed;
+height: 25px;
+width: 8.3333px;
+background-color: #00004d;
+border-radius: 50%;
+/* margin: 28.875px 0px 0px 90.3px; */
+/* top: 2.75vh;
+left: 7vw; */
+top: 28.875px;
+left: 90.3px;
+transform: rotate(140deg);
+z-index: 210;
+cursor: pointer;
+}
+
+.circle#hair5 {
+position: fixed;
+height: 25px;
+width: 8.3333px;
+background-color: #00004d;
+border-radius: 50%;
+/* margin: 28.875px 0px 0px 58.05px; */
+/* top: 2.75vh;
+left: 4.5vw; */
+top: 28.875px;
+left: 58.05px;
+transform: rotate(40deg);
+z-index: 210;
+cursor: pointer;
+}
+
+.circle#eye1 {
+  position: fixed;
+  height: 5px;
+  width: 5px;
+  background-color: #264d00;
+  border-radius: 50%;
+  /* margin: 52.5px 0px 0px 64.5px; */
+  /* left: 5vw;
+  top: 5vh; */
+  top: 52.5px;
+  left: 64.5px;
+  z-index: 210;
+  cursor: pointer;
+}
+
+.circle#eye2 {
+  position: fixed;
+  height: 5px;
+  width: 5px;
+  background-color: #264d00;
+  border-radius: 50%;
+  /* margin: 52.5px 0px 0px 87.075px; */
+  /* left: 6.75vw;
+  top: 5vh; */
+  top: 52.5px;
+  left: 87.075px;
+  z-index: 210;
+  cursor: pointer;
+}
+
+.rectangle#smile1 {
+  position: fixed;
+  height: 3.333333px;
+  width: 0.83333px;
+  background-color: black;
+  /* margin: 65.625px 0px 0px 66.435px; */
+  /* left: 5.15vw;
+  top: 6.25vh; */
+  top: 65.625px;
+  left: 66.435px;
+  z-index: 210;
+  cursor: pointer;
+}
+
+.rectangle#smile2{
+  position: fixed;
+  height: 0.833333px;
+  width: 22.33333px;
+  background-color: black;
+  /* margin: 68.25px 0px 0px  65.78999999999999px; */
+  /* left: 5.10vw;
+  top: 6.5vh; */
+  top: 68.25px;
+  left: 65.7899999999999999px;
+  z-index: 210;
+  cursor: pointer;
+}
+
+.rectangle#smile3 {
+  position: fixed;
+  height: 3.333333px;
+  width: 0.833333px;
+  background-color: black;
+  /* margin: 65.625px 0px 0px 88.365px; */
+  /* left: 6.85vw;
+  top: 6.25vh; */
+  top: 65.625px;
+  left: 88.365px;
+  z-index: 210;
+  cursor: pointer;
+}
+
+#graphic {
+position: fixed;
+color: black;
+font-family: "Ubuntu", sans-serif;
+font-size: 80px;
+font-weight: bold;
+top: 15px;
+left: 120px;
+z-index: 110;
+/* text-shadow: 2px 2px #ff3333; */
+}
+
+</style>
+</head>
+<body>
+
+<!-- BOOK -->
+
+<img id=gd1 src="gd1.png">
+<img id=gd2 src="gd2.png">
+<img id=gd3 src="gd3.png">
+<img id=gd4 src="gd4.png">
+<img id=gd5 src="gd5.png">
+<img id=gd6 src="gd6.png">
+<img id=gd7 src="gd7.png">
+
+<div id=text1>Redesign of the novel <span id=f>Frankenstein</span> by Mary Shelley.</diV>
+<div id=text2>Each page is to be read in varying orientations. Red signifies the Monster, including his actions and speach.
+  Total is 333 pages.</div>
+
+<!-- MANTRA MERCH -->
+
+<img id=gd10 src="gd10.gif">
+<img id=gd11 src="gd11.jpg">
+<img id=gd12 src="gd12.jpg">
+<img id=gd13 src="gd13.jpg">
+<img id=gd14 src="gd14.jpg">
+<img id=gd15 src="gd15.jpg">
+<img id=gd16 src="gd16.jpg">
+<img id=gd17 src="gd17.jpg">
+<img id=gd18 src="gd18.jpg">
+<!-- <img id=gd19 src="gd19.jpg">
+<img id=gd20 src="gd20.jpg"> -->
+
+<div id=text3>Various merchandise using desired mantra.</div>
+<div class="rectangle" id=line2></div>
+<!-- YES POSTER -->
+
+<img id=gd8 src="gd8.png">
+<img id=gd9 src="gd9.png">
+
+<div id=text4>Yes Poster designed to represent the <span id=yes>"Yes Manifesto,"</span> ideology written by Nadia in Her Own World.</div>
+<div class="rectangle" id=line3></div>
+<div id=text5>Front</div>
+<div id=text6>Back</div>
+
+<!-- BAND POSTER -->
+
+<!-- <img id=gd21 src="gd21.jpg"> -->
+
+<div id=graphic>Graphic Design</div>
+
+<a href=menu.html>
+    <div class="circle" id=face></div>
+    <div class="rectangle" id=hair1></div>
+    <div class="rectangle" id=hair2></diV>
+    <div class="rectangle" id=hair3></div>
+    <div class="circle" id=hair4></div>
+    <div class="circle" id=hair5></div>
+    <div class="circle" id=eye1></div>
+    <div class="circle" id=eye2></div>
+    <div class="rectangle" id=smile1></div>
+    <div class="rectangle" id=smile2></div>
+    <div class="rectangle" id=smile3></div></a>
+
+</body>
+</html>
